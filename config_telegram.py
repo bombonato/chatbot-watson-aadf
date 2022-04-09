@@ -32,6 +32,9 @@ def setup():
     start_handler = CommandHandler('start', start)
     dispatcher.add_handler(start_handler)
 
+    dispatcher.add_handler(CommandHandler("help", help))
+    dispatcher.add_handler(MessageHandler(Filters.text, echo))
+
     message_handler = MessageHandler(Filters.text, message)
     dispatcher.add_handler(message_handler)
 
@@ -57,6 +60,14 @@ def start(update, context):
     assistant.validate_session(update.effective_chat.id)
     response_text = assistant.send_message(SessionManager.getInstance().getSession(update.effective_chat.id), '')
     context.bot.send_message(chat_id=update.effective_chat.id, text=response_text)
+
+def help(update, context):
+    """Mensagem qdo enviar o comando /help"""
+    update.message.reply_text('Ajuda!!!')
+
+def echo(update, context):
+    """Retorna mesma mensagem enviada (echo)"""
+    update.message.reply_text(update.message.text)
 
 def message(update, context):
     message_received = update.message.text
