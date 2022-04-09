@@ -33,7 +33,7 @@ def setup():
     dispatcher.add_handler(start_handler)
 
     dispatcher.add_handler(CommandHandler("help", help))
-    dispatcher.add_handler(MessageHandler("echo", echo))
+    dispatcher.add_handler(CommandHandler("echo", echo))
 
     message_handler = MessageHandler(Filters.text, message)
     dispatcher.add_handler(message_handler)
@@ -63,7 +63,7 @@ def start(update, context):
 
 def help(update, context):
     """Mensagem qdo enviar o comando /help"""
-    update.message.reply_text('Ajuda!!!')
+    update.message.reply_text('Ajuda\n Recursos disponíveis:\n/start - inicia o bot\n/help - exibe ajuda\n/echo - retorna a mensagem enviada\n/cep - pesquisa cep')
 
 def echo(update, context):
     """Retorna mesma mensagem enviada (echo)"""
