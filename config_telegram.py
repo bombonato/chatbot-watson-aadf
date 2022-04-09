@@ -33,7 +33,7 @@ def setup():
     dispatcher.add_handler(start_handler)
 
     dispatcher.add_handler(CommandHandler("help", help))
-    dispatcher.add_handler(MessageHandler(Filters.text, echo))
+    dispatcher.add_handler(MessageHandler("echo", echo))
 
     message_handler = MessageHandler(Filters.text, message)
     dispatcher.add_handler(message_handler)
