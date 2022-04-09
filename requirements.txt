@@ -1,2 +1,2 @@
 ibm-watson
-python-telegram-bot
+python-telegram-bot==12.7

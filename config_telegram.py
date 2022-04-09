@@ -45,7 +45,7 @@ def setup():
     #o heroku cuida automaticamente do proxy reverso, portanto a porta deve ser a fornecida pelo heroku
     #nas variáveis de ambiente
     updater.start_webhook(listen='0.0.0.0',
-                          port=PORT,
+                          port=int(PORT),
                           url_path=TOKEN)
 
     #configura webhook
