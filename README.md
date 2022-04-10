@@ -9,6 +9,13 @@ Chatbot IBM Watson com integração Telegram
 - Daniela Ribeiro Bragança Silva, 2186330030
 - Fabio Bombonato, 2186330024
 
+# CEP + Weather
+
+### Comandos
+
+- usar "ajuda" no Telegram que obtem ajuda pelo watson
+- ou usar "/help" para obter alguns comandos diretamente pelo Telegram
+
 A seguir as variáveis que devem ser configuradas no Heroku:
 
 Variáveis de Ambinete:
