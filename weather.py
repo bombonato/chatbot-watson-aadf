@@ -13,10 +13,10 @@ def get_weather(cep):
     if(response.status_code == requests.codes.ok):
         response = response.json()
 
-        retorno = 'Clima: ' + str(response['descricao']) + '\n'
+        retorno = '\nClima: ' + str(response['descricao']) + '\n'
         retorno += 'Temperatura atual: ' + str(response['temperatura']) + '\n'
         retorno += 'Umidade: ' + str(response['umidade']) + '\n'
-        retorno += '---' * 20
+        retorno += '---' * 10
         retorno += '\nPróximos dias:'
         for previsao in response['previsoes']:
             retorno += '\n' + str(previsao['data'])
