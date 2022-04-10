@@ -30,6 +30,3 @@ def get_weather(cep):
 
     else:
         return ''
-
-
-#get_weather('12242-905')
