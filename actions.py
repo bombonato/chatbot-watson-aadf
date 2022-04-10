@@ -5,9 +5,7 @@ def action_handler(action, parameters, return_var):
     return_values = {}
     if action == 'cep':
         return_values = search_cep(parameters, return_var)
-    elif action == 'search': # TODO: remover
-        # return_values = search_movies(parameters, return_var)
-        return_values = ""
+
     return {
             'skills': {
                 'main skill': {
