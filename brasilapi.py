@@ -20,4 +20,5 @@ def get_cep(cep):
                 + response['city'] + ' - ' + response['state'] + ', ' \
                 + response['cep']
     else:
-        return "{} não encontrado".format(cep)
+        return ''
+        #return "{} não encontrado".format(cep)
