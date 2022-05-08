@@ -1,2 +1,3 @@
 ibm-watson
 python-telegram-bot==12.7
+pyowm

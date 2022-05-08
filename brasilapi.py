@@ -4,7 +4,7 @@ import os
 
 base_url = 'https://brasilapi.com.br/api'
 
-logger = logging.getLogger('TelegramBot')
+logger = logging.getLogger('TelegramBot - BrasilAPI')
 
 def get_cep(cep):
     endpoint = base_url + '/cep/v2/' + cep
@@ -20,5 +20,5 @@ def get_cep(cep):
                 + response['city'] + ' - ' + response['state'] + ', ' \
                 + response['cep']
     else:
-        return ''
-        #return "{} não encontrado".format(cep)
+        # return ''
+        return "{} não encontrado".format(cep)
