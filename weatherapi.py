@@ -10,7 +10,6 @@ def obter_clima(cidade):
     API_KEY = os.environ['OWM_API_KEY']
 
     logger.info('obter_clima - cidade: {}'.format(cidade))
-    logger.info('obter_clima - key: {}'.format(API_KEY))
 
     place_br = "{},BR".format(cidade)
 
