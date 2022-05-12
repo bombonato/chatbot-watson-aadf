@@ -61,3 +61,9 @@ Assistant
 - Barra lateral Assistants
 - Criar uma nova Assistente
 - Selecionar a Skill criada no passo anterior para fazer a interligação
+
+### Notas
+
+- Implementação no Watson ainda não reconhecendo valores numéricos nos testes, tais como pesquisa por CEP, a qual identifica em palavras por extenso, em ves de números, impedindo a pesquisa por CEP.
+  - Ex.: "2022-01-01 99:99:99,999 - TelegramBot - INFO - Detectada frase: setenta e um nove três um clientes e quarenta"
+- Recurso de pesquisa por Clima esta funcional, verificamos mais facilidades na pesquisa por cidades como Brasília, Curitiba, Florianopolis, Belo Horizonte, etc, certa dificuldade para cidade como São Paulo, Rio de Janeiro, etc, possivelmente relacionado a questões da fala como entonação, espaçamento, ruído, etc.
