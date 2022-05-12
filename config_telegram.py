@@ -63,7 +63,7 @@ def start(update, context):
 
 def help(update, context):
     """Mensagem qdo enviar o comando /help"""
-    update.message.reply_text('Ajuda\n Recursos disponíveis:\n/start - inicia o bot\n/help - exibe ajuda\n/echo - retorna a mensagem enviada\n- pesquisar CEP')
+    update.message.reply_text('Ajuda\n Recursos disponíveis:\n/start - inicia o bot\n/help - exibe ajuda\n/echo - retorna a mensagem enviada\n- pesquisar CEP\n- pesquisar CLIMA')
 
 def echo(update, context):
     """Retorna mesma mensagem enviada (echo)"""

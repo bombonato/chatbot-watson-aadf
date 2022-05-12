@@ -14,19 +14,20 @@ Chatbot IBM Watson com integração Telegram
 
 - Pesquisa por CEP
 - Pesquisa por Clima
-- Pesquisa por Voz básica
+- Pesquisa utilizando Voz básica
 
-### Comandos
+### Comandos Básicos
 
 - usar "ajuda" no Telegram que obtem ajuda pelo watson
 - ou usar "/help" para obter alguns comandos diretamente pelo Telegram
+- Enviar perguntas como: "Quais recursos estão disponíveis?"
 
 ### Exemplos
 
 - Oi, Olá, como vai
 - O que pode fazer? Quais recursos estão disponíveis? 
 - Gostaria de pesquisar o cep
-- Quero saber o clime
+- Quero saber o clima
 - Tchau, adeus, etc
 
 ### Ambiente
@@ -43,3 +44,20 @@ A seguir as variáveis que devem ser configuradas no Heroku:
 * TELEGRAM_BOT_TOKEN: token do bot criado no Telegram
 * TELEGRAM_WEBHOOK: url da aplicação do heroku (https://\<appname\>.herokuapp.com)
 * OWM_API_KEY: chave da API do OpenWeatherMap
+
+### Watson Assistant
+
+Importar a SKILL utilizada no Watson Assistant:
+
+Skill
+- Acessar o IBM Watson Assistant
+- Barra Lateral Skill
+- Clicar em "Create skill"
+- Selecionar o cartão da Skill criado, clicar em próximo
+- Selecionar "Import skill" e selecionar o arquivo de versão mais novo "skill-WatsonBotSkillAADF<versao>.json"
+- O webhook é criado nessa importação, apontando para o código rodando no Heroku (ou outro provedor utilizado), pode ser verificado entrando na Skill e clicando no menu "Webhooks", no caso, corresponde ao local onde a aplicação gateway entre Telegram e Watson esta rodando (ex. heroku)
+
+Assistant
+- Barra lateral Assistants
+- Criar uma nova Assistente
+- Selecionar a Skill criada no passo anterior para fazer a interligação
