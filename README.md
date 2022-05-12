@@ -5,7 +5,7 @@ Chatbot IBM Watson com integração Telegram
 
 ### Turma Pós-IA 2021-1
 
-- Alexandre Augusto Barbosa - 2186330043
+- Alexandre Augusto Barbosa, 2186330043
 - Artur Clemente, 2186330018
 - Daniela Ribeiro Bragança Silva, 2186330030
 - Fabio Bombonato, 2186330024
