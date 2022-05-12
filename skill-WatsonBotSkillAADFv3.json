@@ -40,7 +40,13 @@
           "text": "desejo pesquisar o clima"
         },
         {
+          "text": "gostaria de saber a previsão do tempo"
+        },
+        {
           "text": "gostaria de saber o clima"
+        },
+        {
+          "text": "mostre a previsão do tempo"
         },
         {
           "text": "pesquisar por clima"
@@ -103,6 +109,9 @@
           "text": "me diga os serviços oferecidos"
         },
         {
+          "text": "mostre o faq"
+        },
+        {
           "text": "o que sabe fazer"
         },
         {
@@ -122,6 +131,9 @@
         },
         {
           "text": "Bem vindo ao nosso assistente"
+        },
+        {
+          "text": "Em que posso ajudar?"
         },
         {
           "text": "Oi"
